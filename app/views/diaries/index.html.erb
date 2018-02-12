@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<div class="index">
+<h1>Diaries</h1>
+
+<table class="index-t">
+  <p><%= link_to '新しい日記を書く', new_diary_path %></p>
+  <thead>
+    <tr>
+      <th>タイトル</th>
+      <th>テーマ</th>
+      
+      <th colspan="3" class="index-function">編集/削除</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @diaries.each do |diary| %>
+      <tr>
+        <td class="index-title"><%= link_to diary.title, diary %></td>
+        <td class="index-date"><%= diary.theme %></td>
+        
+        
+        <td class="function-item"><%= link_to 'Edit', edit_diary_path(diary) %></td>
+        <td class="function-item"><%= link_to 'Destroy', diary, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to '新しい日記を書く', new_diary_path %>
+
+</div>

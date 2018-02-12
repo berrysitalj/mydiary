@@ -1,0 +1,103 @@
+// Place all the styles related to the mydiaries controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+	margin: 0px;
+    padding: 10px 50px;
+    text-align: center;
+	background-image: url("/haikei.gif");
+	/* border: solid 0.5px green; */
+
+}
+
+table th {
+    font-size: 16px;
+	background-color: #C0C0C0;
+}
+
+table td {
+    font-size: 16px;
+	background-color: #FFFFBB;
+}
+
+.index {
+    text-align:center;
+    background-color: #FFFFFF;
+    padding: 10px 0px;
+	/* border: solid 0.5px green; */
+    
+}
+
+.index-t {
+	text-align:center;
+	/* border: solid 0.5px green; */
+    margin: 0 auto;
+}
+
+.index-t p {
+	padding: 1px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.index-title {
+	word-break: break-all;
+	width: 200px;
+	padding: 10px 40px;
+}
+
+.index-date {
+	padding: 10px 40px;
+
+}
+
+.index-function {
+	padding: 10px 40px;
+
+}
+
+.function-item {
+	text-align: center;
+
+}
+
+.show {
+	width:600px;
+	padding: 30px;
+	text-align: center;
+	/* border: solid 0.5px green; */
+    margin: 0 auto;
+    word-break: break-all;
+    background-color: white;
+}
+
+.show-title p {
+	font-size: 24px;
+}
+
+.show-date p {
+	font-size: 14px;
+}
+
+.show-content p {
+	white-space: pre-wrap;
+	font-size: 16px;
+	text-align: left;
+	/* border: solid 0.5px green; */
+}
+
+.field-area {
+	font-size: 20px;
+	padding: 10px;
+	
+}
+.field-area p {
+	font-size: 20px;
+	padding: 1px;
+
+}
+
+input, select, textarea {
+    font-size: 100%;
+}

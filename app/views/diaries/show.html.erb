@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<div class="show">
+  <div class="show-title">
+    <p><%= @diary.title %></p>
+  </div>
+
+  <div class="show-date">
+    <p>
+      <strong>テーマ:</strong>
+      <%= @diary.theme %>
+    </p>
+  </div>
+
+  <div class="show-content">
+    <p><%= @diary.content %></p>
+  </div>
+
+
+  <%= link_to 'Edit', edit_diary_path(@diary) %> |
+  <%= link_to 'Back', diaries_path %>
+</div>
